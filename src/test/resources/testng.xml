@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RealWorld Test Suite" verbose="1" parallel="methods" thread-count="3">
+    
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    
+    <test name="API Tests">
+        <classes>
+            <class name="com.realworld.tests.api.ArticleApiTest"/>
+            <class name="com.realworld.tests.api.TagApiTest"/>
+            <class name="com.realworld.tests.api.UserSubscriptionTest"/>
+        </classes>
+    </test>
+    
+    <test name="UI Tests">
+        <classes>
+            <class name="com.realworld.tests.ui.ArticleUiTest"/>
+            <class name="com.realworld.tests.ui.TagSearchTest"/>
+        </classes>
+    </test>
+    
+</suite>
