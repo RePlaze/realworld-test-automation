@@ -101,24 +101,3 @@ Tests can run in parallel for faster feedback (configurable in testng.xml).
 ## 🔧 Configuration
 
 Test configuration is managed via `test.properties`:
-
-```properties
-app.base.url=https://demo.realworld.show
-api.base.url=https://api.realworld.io/api
-browser.type=chrome
-browser.headless=false
-```
-
-Override properties via system properties:
-```bash
-./gradlew test -Dbrowser.headless=true
-```
-
-## 📊 Reporting
-
-Allure provides comprehensive test reports including:
-- Test execution timeline
-- Success/failure statistics
-- Step-by-step test execution
-- Screenshots on failure
-- API request/response logs
